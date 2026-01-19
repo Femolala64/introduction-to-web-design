@@ -4,78 +4,99 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
+    <link rel="stylesheet" href="/stylesheets/site.css" />
   </head>
   <body>
-    <a href="index.html">Home Page</a>
-    <a href="about_us.html">About Us</a>
-    <a href="contact_Us.html">Contact Us</a>
-    <h1 style="color: cornflowerblue;">Contact Us</h1>
-    <hr />
-<!-- Tables -->
-    <h2>Locations</h2>
-    <table>
-      <tr>
-        <th>LoGo</th>
-        <th>Location</th>
-        <th>Opening Hours</th>
-        <th>Email address</th>
-        <th>Phone Number</th>
-      </tr>
-      <tr>
-        <td>
-          <img src="" alt="LoGo1">
-        </td>
-        <td>Abuja</td>
-        <td>9:00 AM - 6:00 PM</td>
-        <td>abuja@company.com</td>
-        <td>+234 803 123 4567</td>
-      </tr>
-      <tr>
-        <td>
-          <img src="" alt="LoGo2">
-        </td>
-        <td>Lagos</td>
-        <td>9:00 AM - 6:00 PM</td>
-        <td>lagos@company.com</td>
-        <td>+234 803 123 4568</td>
-      </tr>
-      <tr>
-        <td>
-          <img src="" alt="LoGo3">
-        </td>
-        <td>Kano</td>
-        <td>9:00 AM - 6:00 PM</td>
-        <td>kano@company.com</td>
-        <td>+234 803 123 4569</td>
-      </tr>
-      <tr>
-        <td><img src="" alt="LoGo4"></td>
-        <td>Kano</td>
-        <td>9:00 AM - 6:00 PM</td>
-        <td>kano@company.com</td>
-        <td>+234 803 123 4569</td>
-      </tr>
-    </table>
-    <!-- Form -->
-     <h2>General Inquiries</h2>
-     <form action="confirmation.html">
-      <label for="name">Name:</label><br />
-      <input required type="text" id="name" name="name" />
-      <br /><br />
+    <header>
+      <div id="banner"></div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="contact_Us.html">Contact Us</a>
+      </nav>
+    </header>
 
-      <label for="email">Email:</label><br />
-      <input required type="email" id="email" name="email" />
-      <br /><br />
+    <main>
+      <h1>Contact Us</h1>
+      <hr />
+      <article>
+        <!-- Tables -->
+        <h2>Locations</h2>
+        <table>
+          <tr>
+            <th>LoGo</th>
+            <th>Location</th>
+            <th>Opening Hours</th>
+            <th>Email address</th>
+            <th>Phone Number</th>
+          </tr>
+          <tr>
+            <td>
+              <img class="logo" src="/images/image.png" alt="LoGo1" />
+            </td>
+            <td>Abuja</td>
+            <td>9:00 AM - 6:00 PM</td>
+            <td>abuja@company.com</td>
+            <td>+234 803 123 4567</td>
+          </tr>
+          <tr>
+            <td>
+              <img class="logo" src="/images/image.png" alt="LoGo2" />
+            </td>
+            <td>Lagos</td>
+            <td>9:00 AM - 6:00 PM</td>
+            <td>lagos@company.com</td>
+            <td>+234 803 123 4568</td>
+          </tr>
+          <tr>
+            <td>
+              <img class="logo" src="/images/image.png" alt="LoGo3" />
+            </td>
+            <td>Kano</td>
+            <td>9:00 AM - 6:00 PM</td>
+            <td>kano@company.com</td>
+            <td>+234 803 123 4569</td>
+          </tr>
+          <tr>
+            <td><img class="logo" src="/images/image.png" alt="LoGo4" /></td>
+            <td>Kano</td>
+            <td>9:00 AM - 6:00 PM</td>
+            <td>kano@company.com</td>
+            <td>+234 803 123 4569</td>
+          </tr>
+        </table>
+      </article>
+      <!-- Form -->
+      <article>
+        <h2>General Inquiries</h2>
+        <form action="confirmation.html">
+          <label for="name">Name:</label><br />
+          <input required type="text" id="name" name="name" />
+          <br /><br />
+          <label for="email">Email:</label><br />
+          <input required type="email" id="email" name="email" />
+          <br /><br />
+          <label for="">Are you employed</label>
+          <input type="radio" id="yes" name="employed" value="yes" /> yes
+          <input type="radio" id="no" name="employed" value="no" /> No <br />
+          <br />
+          <label for="inquiry">State your inquiry:</label><br />
+          <textarea
+            required
+            id="inquiry"
+            name="inquiry"
+            rows="4"
+            cols="50"
+          ></textarea
+          ><br /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </article>
+    </main>
+    <footer>
+      <a href="https://www.amazon.com">Amazon</a>
 
-      <label for="">Are you employed</label>
-      <input type="radio" id="yes" name="employed" value="yes" /> yes
-      <input type="radio" id="no" name="employed" value="no" /> No <br> <br>
-
-      <label for="inquiry">State your inquiry:</label><br />
-      <textarea required id="inquiry" name="inquiry" rows="4" cols="50"></textarea
-      ><br /><br />
-
-      <input type="submit" value="Submit" />
-     </form>
+      <a href="https://www.ebay.com" target="_blank">eBay</a>
+    </footer>
   </body>
 </html>
