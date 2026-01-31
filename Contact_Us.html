@@ -69,7 +69,7 @@
       <!-- Form -->
       <article>
         <h2>General Inquiries</h2>
-        <form action="confirmation.html">
+        <form action="confirmation.html" id="contactform">
           <label for="name">Name:</label><br />
           <input required type="text" id="name" name="name" />
           <br /><br />
@@ -89,7 +89,8 @@
             cols="50"
           ></textarea
           ><br /><br />
-          <input type="submit" value="Submit" />
+          <input type="submit" />
+          <button type="button" onclick="clearForm()">Clear</button>
         </form>
       </article>
     </main>
@@ -98,5 +99,6 @@
 
       <a href="https://www.ebay.com" target="_blank">eBay</a>
     </footer>
+    <script src="/scripts/site.js"></script>
   </body>
 </html>
