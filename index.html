@@ -1,92 +1,242 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
     <link rel="stylesheet" href="/stylesheets/site.css" />
   </head>
   <body>
-    <div id="Header"></div>
-    <div id="banner">
-      <p>Random website notification</p>
+    <div id="Header">
+      <div id="banner" class="bg-secondary text-white text-center">
+        <p>Random website notification</p>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Animal Protection</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="/index.html"
+                >Home</a
+              >
+              <a class="nav-link" href="/about_us.html">About us</a>
+              <a class="nav-link" href="/contact_us.html">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </div>
 
-    <div id="nav">
-      <!-- Anchor tags used for internal navigation  -->
-      <a href="index.html">Home</a>
-      <a href="about_us.html">About Us</a>
-      <a href="contact_Us.html">Contact Us</a>
-    </div>
-    <div id="main">
+    <div id="main" class="container">
       <!-- Examples of heading tags -->
       <h1>Animal Preservation centre</h1>
       <hr />
-      <h2 class="Differentlookingtext">Heading 2</h2>
-      <h3>Heading 3</h3>
-      <h4>Heading 4</h4>
-      <h5>Heading 5</h5>
-      <h6>Heading 6</h6>
-      <h2>Presservation Success Story</h2>
-      <!-- How to embbed links from another website on your webpage -->
-
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/CvAqzg7zDsA?si=aegrsMnuhMo9rqdD"
-        title="Jamaican Rock Iguana - Success Story"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
-
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/images/buzzard.jpg"
+              class="d-block w-100"
+              alt="buzzard"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/images/chipmunk.jpg"
+              class="d-block w-100"
+              alt="chipmunk"
+            />
+          </div>
+          <div class="carousel-item">
+            <img src="/images/fish.jpg" class="d-block w-100" alt="fish" />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/images/gorilla.jpg"
+              class="d-block w-100"
+              alt="gorilla"
+            />
+          </div>
+          <div class="carousel-item">
+            <img src="/images/llama.jpg" class="d-block w-100" alt="llama" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br />
+      <br />
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, odit
-        distinctio, repellendus atque eveniet facere veritatis assumenda ipsa
-        <br />
-        fuga eius corrupti illum iste saepe reiciendis veniam culpa corporis
-        beatae sit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+        consequuntur? Minus dolores hic ut fugiat quia. Exercitationem, error
+        quaerat. Doloribus ducimus similique odit ad exercitationem! Esse
+        laboriosam ipsum laudantium quibusdam?
       </p>
-      <p class="Differentlookingtext weirdcolor">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, odit
-        distinctio, repellendus atque eveniet facere veritatis assumenda ipsa
-        <br />
-        fuga eius corrupti illum iste saepe reiciendis veniam culpa corporis
-        beatae sit.
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        provident doloremque facilis, est consectetur unde sit saepe possimus
+        tenetur aperiam vero architecto odit minus, exercitationem reiciendis
+        aliquam. Provident, eligendi quos!
       </p>
+      <br />
+      <br />
+      <div class="row">
+        <div class="col">
+          <h2>Presservation Success Story</h2>
+          <!-- How to embbed links from another website on your webpage -->
 
-      <h2>Afms Beating of the retreat Event</h2>
-      <video width="560" height="315" controls>
-        <source src="/videos/afms.mp4" type="video/mp4" />
-        <source src="/videos/afms.ogg" type="video/ogg" />
-        <source src="/videos/afms.wmv" type="video/wmv" />
-        Your browser does not support the video.
-      </video>
-      <br /><br />
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/CvAqzg7zDsA?si=aegrsMnuhMo9rqdD"
+            title="Jamaican Rock Iguana - Success Story"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, odit
+            distinctio, repellendus atque eveniet facere veritatis assumenda
+            ipsa
+            <br />
+            fuga eius corrupti illum iste saepe reiciendis veniam culpa corporis
+            beatae sit.
+          </p>
+        </div>
+        <div class="col">
+          <h2>Afms Beating of the retreat Event</h2>
+          <video width="560" height="315" controls>
+            <source src="/videos/afms.mp4" type="video/mp4" />
+            <source src="/videos/afms.ogg" type="video/ogg" />
+            <source src="/videos/afms.wmv" type="video/wmv" />
+            Your browser does not support the video.
+          </video>
+          <br /><br />
 
-      <audio controls>
-        <source src="music/song.mp3" type="audio/mpeg" />
+          <audio controls>
+            <source src="music/song.mp3" type="audio/mpeg" />
 
-        Your browser does not support the video.
-      </audio>
+            Your browser does not support the video.
+          </audio>
+        </div>
+      </div>
+
       <br />
       <br />
       <br />
-      <button id="JqueryBtn">Hide P Tags - Jquerry</button>
-      <!-- onlcick you see below here is known as an event and the hideptags is a function thast been defined in the script tag below -->
-      <button onclick="hidePTags()">Hide P Tags - Javascript</button>
+      <div class="text-center">
+        <button id="JqueryBtn" class="btn btn-danger btn-lg">
+          Hide P Tags - Jquerry
+        </button>
+        <!-- onlcick you see below here is known as an event and the hideptags is a function that been defined in the script tag below -->
+        <button onclick="hidePTags()" class="btn btn-outline-danger btn-lg">
+          Hide P Tags - Javascript
+        </button>
+      </div>
     </div>
-    <div id="footer">
-      <a href="https://www.amazon.com">Amazon</a>
+    <footer class="py-3 mt-4 bg-secondary" data-bs-theme="dark">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a href="/index.html" class="nav-link px-2 text-body-secondary"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="/about.html" class="nav-link px-2 text-body-secondary"
+            >About Us</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="/contact.html" class="nav-link px-2 text-body-secondary"
+            >Contact Us
+          </a>
+        </li>
+      </ul>
+      <p class="text-center text-body-secondary">&copy;
+        <a href="https://www.femijohn.com" target="_blank" class="nav-link"
+          >Femi Personal website</a
+        >
+      </p>
+    </footer>
 
-      <a href="https://www.ebay.com" target="_blank">eBay</a>
-    </div>
     <!-- refrencing jquery locally -->
     <script src="/scripts/jquery.min.js"></script>
+    <script src="/scripts/bootstrap.min.js"></script>
     <script src="/scripts/site.js"></script>
-    <script>
-
-    </script>
   </body>
 </html>

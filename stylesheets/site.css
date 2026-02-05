@@ -13,15 +13,12 @@ h5,
 h6 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-p,
 li {
   font-family: "Courier New", Courier, monospace;
 }
 #banner {
-  text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: darkkhaki;
 }
 #banner p {
   margin: 0;
@@ -34,39 +31,8 @@ nav {
   text-align: center;
 }
 
-#nav a,
-nav a {
-  color: chocolate;
-  text-decoration: none;
-  font-size: x-large;
-  margin-right: 10px;
-  padding: 10px;
-}
-#nav a:hover,
-nav a:hover {
-  background-color: lightblue;
-  color: darkred;
-  text-decoration: underline;
-}
-#footer,
-footer {
-  background-color: #e7e9eb;
-  min-height: 50px;
-  padding: 10px;
-  text-align: center;
-}
-#footer a,
-footer a {
-  color: darkblue;
-  text-decoration: overline;
-  font-size: large;
-  margin-right: 50px;
-}
-#main,
-main {
-  width: 70%;
-  margin: 0 auto;
-}
+
+
 article {
   margin-bottom: 50px;
 }

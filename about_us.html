@@ -1,23 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
     <link rel="stylesheet" href="/stylesheets/site.css" />
   </head>
   <body>
     <header>
-      <div id="banner">
-        <p>Notification</p>
+      <div id="banner" class="bg-secondary text-white text-center">
+        <p>Random website notification</p>
       </div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about_us.html">About Us</a>
-        <a href="contact_Us.html">Contact Us</a>
+      <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Animal Protection</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="/index.html"
+                >Home</a
+              >
+              <a class="nav-link" href="/about_us.html">About us</a>
+              <a class="nav-link" href="/contact_us.html">Contact Us</a>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <h1>About Us</h1>
       <hr />
       <article>
@@ -33,31 +54,241 @@
 
       <article>
         <h2>Daily Task</h2>
-        <ul>
-          <li>We Patrol Preservation</li>
-          <li>We Rescue Injured Animals</li>
-          <li>We Educate the Public</li>
-          <li>We Support Conservation Research</li>
-        </ul>
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem">
+              <img
+                src="images/buzzard.jpg"
+                class="card-img-top"
+                alt="buzzard"
+              />
+              <div class="card-body">
+                <h5 class="card-title">We Patrol</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                  iure quae commodi fugiat, deleniti consequatur minus quis
+                  obcaecati debitis quibusdam impedit molestias, expedita sed
+                  sunt assumenda sit consequuntur, asperiores labore!
+                </p>
+                <a href="contact_Us.html" class="btn btn-primary"
+                  >Check out our patrols</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem">
+              <img
+                src="images/chipmunk.jpg"
+                class="card-img-top"
+                alt="chipmunk"
+              />
+              <div class="card-body">
+                <h5 class="card-title">We Rescue</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur nesciunt quasi mollitia atque obcaecati ipsa
+                  architecto distinctio! Ratione debitis, at repellendus facere,
+                  asperiores voluptatem, reiciendis doloribus reprehenderit esse
+                </p>
+                <a href="contact_Us.html" class="btn btn-primary">Go Rescue</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem">
+              <img src="images/fish.jpg" class="card-img-top" alt="fish" />
+              <div class="card-body">
+                <h5 class="card-title">We Educate</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, voluptatum! Quod, voluptas. Quisquam, voluptatum!
+                  Quod, voluptas. Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Praesentium sit quidem iste laudantium illum
+                </p>
+                <a href="/confirmation.html" class="btn btn-primary"
+                  >Check out education</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem">
+              <img
+                src="images/gorilla.jpg"
+                class="card-img-top"
+                alt="gorilla"
+              />
+              <div class="card-body">
+                <h5 class="card-title">We Support</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                  nesciunt natus facere error vitae nihil, quaerat, molestias
+                  perferendis beatae recusandae consequuntur sapiente accusamus,
+                  fugiat quod dolores placeat illum ducimus laudantium.
+                </p>
+                <a href="/contact_Us.html" class="btn btn-primary"
+                  >Support Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
       </article>
 
       <article>
         <h2>How you can Join</h2>
-        <ol>
-          <li>Call our recruitment team</li>
-          <li>Volunteer for our events</li>
-          <li>Donate to our cause</li>
-          <li>Spread awareness about wildlife conservation</li>
-          <li><a href="/Contact_Us.html">Contact centre office</a></li>
-        </ol>
+        <br />
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Call our recruitment team
+              </button>
+            </h3>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus corrupti, dicta voluptatibus voluptatem similique
+                distinctio accusamus soluta repellendus minima magnam aut eum,
+                asperiores sunt ex quia quo officiis, ipsa consequatur?
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                submit CV
+              </button>
+            </h3>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the second item’s accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It’s also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Show Up for interview
+              </button>
+            </h3>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the third item’s accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It’s also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                Contact centre office
+              </button>
+            </h3>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                quas ad iure, laudantium facilis nesciunt recusandae dolores ut.
+                Ex, explicabo. Nulla earum illo quod saepe possimus nostrum
+                corrupti, modi quam.
+                <a href="contact_Us.html" class="btn btn-outline-secondary"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
       </article>
     </main>
-    <footer>
-      <a href="https://www.amazon.com">Amazon</a>
-
-      <a href="https://www.ebay.com" target="_blank">eBay</a>
+    <footer class="py-3 mt-4 bg-secondary" data-bs-theme="dark">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a href="/index.html" class="nav-link px-2 text-body-secondary"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="/about.html" class="nav-link px-2 text-body-secondary"
+            >About Us</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="/contact.html" class="nav-link px-2 text-body-secondary"
+            >Contact Us
+          </a>
+        </li>
+      </ul>
+      <p class="text-center text-body-secondary">
+        &copy;
+        <a href="https://www.femijohn.com" target="_blank" class="nav-link"
+          >Femi Personal website</a
+        >
+      </p>
     </footer>
     <!-- referencing jquery using cdn links  -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"></script>
+    <script src="/scripts/jquery.min.js"></script>
+    <script src="/scripts/bootstrap.min.js"></script>
+    <script src="/scripts/site.js"></script>
   </body>
 </html>

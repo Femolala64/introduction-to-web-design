@@ -1,28 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
+    <!-- this is me refrencing my bootstrap css file & immediately below is normal css file -->
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
     <link rel="stylesheet" href="/stylesheets/site.css" />
   </head>
   <body>
     <header>
-      <div id="banner"></div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about_us.html">About Us</a>
-        <a href="contact_Us.html">Contact Us</a>
+      <div id="banner" class="bg-secondary text-white text-center">
+        <p>Random website notification</p>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Animal Protection</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="/index.html"
+                >Home</a
+              >
+              <a class="nav-link" href="/about_us.html">About us</a>
+              <a class="nav-link" href="/contact_us.html">Contact Us</a>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
 
-    <main>
+    <main class="container">
       <h1>Contact Us</h1>
       <hr />
       <article>
         <!-- Tables -->
         <h2>Locations</h2>
-        <table>
+        <table class="table table-striped table-hover">
           <tr>
             <th>LoGo</th>
             <th>Location</th>
@@ -69,36 +93,98 @@
       <!-- Form -->
       <article>
         <h2>General Inquiries</h2>
+        <!-- HTml form tag. the action attribute navigate to a page after submission -->
         <form action="confirmation.html" id="contactform">
-          <label for="name">Name:</label><br />
-          <input required type="text" id="name" name="name" />
-          <br /><br />
-          <label for="email">Email:</label><br />
-          <input required type="email" id="email" name="email" />
-          <br /><br />
-          <label for="">Are you employed</label>
-          <input type="radio" id="yes" name="employed" value="yes" /> yes
-          <input type="radio" id="no" name="employed" value="no" /> No <br />
+          <div class="mb-3">
+            <label for="name" class="form-label">Name:</label><br />
+            <input
+              required
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="e.g oluwafemi"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">emailaddress:</label><br />
+            <input
+              required
+              type="email"
+              class="form-control"
+              id="email"
+              name="emailaddress"
+              placeholder="e.g oluwafemi@gmail.com"
+            />
+          </div>
+          <div class="mb-3">
+            <label>Are you employed?</label><br />
+            <input
+              type="radio"
+              class="form-check-input"
+              id="yesEmployed"
+              name="employed"
+              value="Y"
+            />
+            <label class="form-check-label" for="yesEmployed"> Yes </label>
+
+            <input
+              type="radio"
+              class="form-check-input"
+              id="NoEmployed"
+              name="employed"
+              value="N"
+            />
+            <label class="form-check-label" for="NoEmployed"> No </label>
+          </div>
+          <div class="mb-3">
+            <label for="inquiry" class="form-label">State your inquiry:</label>
+            <textarea
+              class="form-control"
+              required
+              id="inquiry"
+              name="inquiry"
+              rows="4"
+              cols="50"
+            ></textarea>
+          </div>
+
           <br />
-          <label for="inquiry">State your inquiry:</label><br />
-          <textarea
-            required
-            id="inquiry"
-            name="inquiry"
-            rows="4"
-            cols="50"
-          ></textarea
-          ><br /><br />
-          <input type="submit" />
-          <button type="button" onclick="clearForm()">Clear</button>
+
+          <input type="submit" class="btn btn-success" />
+          <button type="button" onclick="clearForm()" class="btn btn-warning">
+            Clear
+          </button>
         </form>
       </article>
     </main>
-    <footer>
-      <a href="https://www.amazon.com">Amazon</a>
-
-      <a href="https://www.ebay.com" target="_blank">eBay</a>
+    <footer class="py-3 mt-4 bg-secondary" data-bs-theme="dark">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a href="/index.html" class="nav-link px-2 text-body-secondary"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="/about.html" class="nav-link px-2 text-body-secondary"
+            >About Us</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="/contact.html" class="nav-link px-2 text-body-secondary"
+            >Contact Us
+          </a>
+        </li>
+      </ul>
+      <p class="text-center text-body-secondary">
+        &copy;
+        <a href="https://www.femijohn.com" target="_blank" class="nav-link"
+          >Femi Personal website</a
+        >
+      </p>
     </footer>
+    <script src="/scripts/jquery.min.js"></script>
+    <script src="/scripts/bootstrap.min.js"></script>
     <script src="/scripts/site.js"></script>
   </body>
 </html>
